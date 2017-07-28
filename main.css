@@ -9,7 +9,18 @@
     width: 100%;
 }
 
-.jumbotron {
+body .jumbohue {
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    background-size: cover;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+body .jumbotron {
     height: 100vh;
     background:  url(images/jumbotron.jpg.jpg) no-repeat center center;
     background-size: cover;
@@ -17,43 +28,81 @@
     display: flex;
     align-items: flex-end;
     width: 100%;
-    margin-top: 0px
+    margin-bottom: 0px;
 }
 
-.jumbotron .container-fluid h1 {
-    color: #bbb;
+#mytitle, #mytitlesmall {
+    color: #fff;
+    text-shadow: 1px 1px 4px black;
 }
 
 body .navbar-default {
       background-color:transparent !important;
       border-color:transparent;
-      background-image:none;
-      box-shadow:none;
-      margin-bottom: 0px;
       position: fixed;
-    width: 100%
+      width: 100%;
+    z-index: 1111
  }
 
 .navbar-brand img {
-    max-height: 15px;
+    max-height: 100px;
 }
 
-#mike {
-      color: #eee;
-    font-size: 1.8em
+body .navbar-toggle {
+    margin: 22px;
+}
+
+.dropdown-menu>li>a:hover {
+    color: lightgoldenrodyellow;
 }
 
 body .navbar-default .navbar-nav>li>a {
-    color: #eee;
-    font-size: 1.5em
+    color: #fff;
+    font-size: 1.5em;
+    padding: 30px;
+    text-shadow: 1px 1px 4px black;
 }
 
 body .navbar-default .navbar-nav>li>a:hover {
     color: lightgoldenrodyellow;
 }
 
-li { margin-left: 15px}
+.dropdown .dropdown-toggle{
+    background-color: transparent!important;
+    
+}
+
+body .dropdown-menu, body  .dropdown-menu li a {
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    text-shadow: 1px 1px 4px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+li { 
+    margin-left: 10px;
+}
 
 body .dropdown-menu {
-    border-radius: 4px
+    border-radius: 4px;
+    
 }
+
+.carousel-inner {
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+body .carousel-caption {
+    color: darkblue;
+    font-size: 1.2em
+}
+
+.contact div {
+    padding: 20px
+}
+
+i {margin-right: 10px}
