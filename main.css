@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-family: 'Exo', sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.jumbotron {
+    height: 100vh;
+    background:  url(images/jumbotron.jpg.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 0px
+}
+
+.jumbotron .container-fluid h1 {
+    color: #bbb;
+}
+
+body .navbar-default {
+      background-color:transparent !important;
+      border-color:transparent;
+      background-image:none;
+      box-shadow:none;
+      margin-bottom: 0px;
+      position: fixed;
+    width: 100%
+ }
+
+.navbar-brand img {
+    max-height: 15px;
+}
+
+#mike {
+      color: #eee;
+    font-size: 1.8em
+}
+
+body .navbar-default .navbar-nav>li>a {
+    color: #eee;
+    font-size: 1.5em
+}
+
+body .navbar-default .navbar-nav>li>a:hover {
+    color: lightgoldenrodyellow;
+}
+
+li { margin-left: 15px}
+
+body .dropdown-menu {
+    border-radius: 4px
+}
