@@ -1,5 +1,4 @@
 /* css reset */
-
 * {
     padding: 0px;
     margin: 0px;
@@ -9,10 +8,9 @@
 }
 
 
+
+
 /* -- nav area -- */
-
-
-
 .container-fluid {
     width: 100%;
 }
@@ -50,6 +48,7 @@ body .jumbotron {
 #mytitle, #mytitlesmall {
     color: #fff;
     text-shadow: 1px 1px 4px black;
+    cursor: default;
 }
 
 body .navbar-toggle {
@@ -95,13 +94,7 @@ body .dropdown-menu {
 
 
 
-
 /* -- carousel section -- */
-
-
-
-
-
 .carousel-inner {
     min-height: 1000px;
     display: flex;
@@ -121,13 +114,7 @@ body .carousel-caption  {
 
 
 
-
 /* -- software section  --- */
-
-
-
-
-
 .softwareblurb{
     padding: 30px;
 }
@@ -135,6 +122,7 @@ body .carousel-caption  {
 .softwaretitle {
     padding:60px;
     text-align: center;
+    cursor:default;
 }
 
 .softwareicons {
@@ -156,29 +144,33 @@ body .carousel-caption  {
 .col-sm-3 {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 
 
 
 /* --- contact section --- */
-
-
-
-
 body .contact {
     margin: 0px;
 }
 
 .contact div {
-    padding: 20px;
     text-align: center;
+    margin-bottom: 20px
 }
 
 i {
     margin-right: 10px
 }
+
+.contact div a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 0px black;
+    cursor: pointer;
+}
+
+
 
 
 /* --- gallery sections --- */
@@ -187,27 +179,18 @@ i {
     margin-top: 70px
 }
 
-.gallerypicbox {
+.gallerypicbox img {
     
 }
 
 .gallerypic {
     height: 400px;
     width: 600px;
-    
     margin: 40px 0px;
-
-}
-
-.gallerypic img{ 
-    max-height: 100%;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
 }
 
 .galleryinfo {
     height: 400px;
+    width: 100%;
     margin: 40px 0px;
 }
-
