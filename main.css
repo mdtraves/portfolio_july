@@ -176,11 +176,11 @@ i {
 /* --- gallery sections --- */
 
 .gallery {
-    margin-top: 70px
+   
 }
 
-.gallerypicbox img {
-    
+.gallerypicbox {
+    margin: 50px 0px
 }
 
 .gallerypic {
