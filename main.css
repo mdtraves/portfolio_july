@@ -16,7 +16,7 @@
 }
 
 body .navbar-default {
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(0,0,0,0.45);
       position: fixed;
       width: 100%;
       z-index: 1111;
@@ -24,8 +24,6 @@ body .navbar-default {
  }
 
 body .jumbohue {
-    height: 100vh;
-    background-color: rgba(0,0,0,0.3);
     background-size: cover;
     text-align: left;
     display: flex;
@@ -36,7 +34,7 @@ body .jumbohue {
 
 body .jumbotron {
     height: 100vh;
-    background:  url(images/jumbotron2.jpg) no-repeat center center;
+    background: url(images/jumbotron.jpg) no-repeat center center;
     background-size: cover;
     text-align: left;
     display: flex;
@@ -176,21 +174,39 @@ i {
 /* --- gallery sections --- */
 
 .gallery {
-   
 }
 
 .gallerypicbox {
-    margin: 50px 0px
+    margin: 50px auto;
+    
 }
 
-.gallerypic {
-    height: 400px;
-    width: 600px;
-    margin: 40px 0px;
+.gallerypicbox img {
+  
+    margin: 0px auto;
+    display: block;
+    border: 1px solid #ddd;
 }
 
 .galleryinfo {
-    height: 400px;
+    
     width: 100%;
     margin: 40px 0px;
+    text-align: center;
+}
+
+
+/* --- footer nav --- */
+
+.footernav {
+    display: flex;
+    height: 40px;
+    background-color: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.9em
+}
+
+.footernav a {
+    color: white
 }
