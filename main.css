@@ -16,8 +16,8 @@
 }
 
 body .navbar-default {
-      background-color: rgba(0,0,0,0.45);
-      position: fixed;
+      background-color: rgba(0,0,0,.8);
+      position: relative;
       width: 100%;
       z-index: 1111;
       border: none;  
@@ -29,11 +29,10 @@ body .jumbohue {
     display: flex;
     align-items: flex-end;
     width: 100%;
-    margin-bottom: 0px;
 }
 
 body .jumbotron {
-    height: 100vh;
+    height: 92vh;
     background: url(images/jumbotron.jpg) no-repeat center center;
     background-size: cover;
     text-align: left;
@@ -46,7 +45,6 @@ body .jumbotron {
 #mytitle, #mytitlesmall {
     color: #fff;
     text-shadow: 1px 1px 4px black;
-    cursor: default;
 }
 
 body .navbar-toggle {
@@ -60,9 +58,10 @@ body .navbar-toggle {
 
 body .navbar-default .navbar-nav>li>a {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 30px;
     text-shadow: 1px 1px 4px black;
+    transition: 0.5s ease;
 }
 
 body .navbar-default .navbar-nav>li>a:hover {
@@ -70,29 +69,35 @@ body .navbar-default .navbar-nav>li>a:hover {
 }
 
 .dropdown .dropdown-toggle{
-    background-color: transparent!important;  
+  
 }
 
-body .dropdown-menu, body  .dropdown-menu li a {
-    background-color: rgba(0,0,0,0.7);
+.dropdown-menu {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dropdown-menu li {
+    color: lightgoldenrodyellow;
+    margin: 10px;
+}
+
+.dropdown-menu li a {
+    background-color: rgba(50,50,50,1);
     color: #fff;
     text-shadow: 1px 1px 4px black;
     padding: 10px;
     margin: 10px;
 }
 
-body li { 
-    margin-left: 10px;
+
+.navbar {
+    border-radius: 0px;
+    margin: 0px;
 }
-
-body .dropdown-menu {
-    border-radius: 4px;
-}
-
-
 
 
 /* -- carousel section -- */
+
 .carousel-inner {
     min-height: 1000px;
     display: flex;
@@ -112,10 +117,9 @@ body .carousel-caption  {
 
 
 
+
 /* -- software section  --- */
-.softwareblurb{
-    padding: 30px;
-}
+
 
 .softwaretitle {
     padding:60px;
@@ -123,29 +127,27 @@ body .carousel-caption  {
     cursor:default;
 }
 
-.softwareicons {
-    display: flex;
-    justify-content:space-around;
-}
-
 .softwarebox img{
     display: flex;
     align-content: center;
-    height: 6em;
+    height: 5em;
+    margin: auto
 }
 
 .softwarebox p {
     text-align: center;
     margin-top: 10px;
+    font-size: 0.9em
         
 }
-.col-sm-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bs4{
+    display: block;
+    
 }
 
-
+.softwarebox {
+    margin-bottom: 20px
+}
 
 
 /* --- contact section --- */
@@ -178,14 +180,12 @@ i {
 
 .gallerypicbox {
     margin: 50px auto;
-    
 }
 
 .gallerypicbox img {
   
     margin: 0px auto;
     display: block;
-    border: 1px solid #ddd;
 }
 
 .galleryinfo {
@@ -198,15 +198,27 @@ i {
 
 /* --- footer nav --- */
 
-.footernav ul{
-    display: flex;
-    height: 40px;
+.footernav {
+    
+    min-height: 100px;
     background-color: rgba(0,0,0,0.7);
-    align-items: center;
     justify-content: space-around;
-    font-size: 0.9em
+    font-size: 1.36em;
+}
+
+.footerDiv {
+    padding: 5px;
+    text-align: center;
+    margin: 30px 0px;
 }
 
 .footernav a {
-    color: white
+    color: white;
+    transition: color 0.6s ease;
+}
+
+.footernav a:hover {
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+        
 }
