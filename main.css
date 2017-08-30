@@ -15,11 +15,18 @@
     width: 100%;
 }
 
+#logo{
+    height: 50px;
+    float: left;
+    margin: 15px;
+    
+}
+
 body .navbar-default {
-      background-color: rgba(0,0,0,.8);
+      background-color: rgba(0,0,0,.7);
       position: relative;
       width: 100%;
-      z-index: 1111;
+      z-index: 1;
       border: none;  
  }
 
@@ -32,14 +39,17 @@ body .jumbohue {
 }
 
 body .jumbotron {
-    height: 92vh;
+    float: left;
+    height: 100vh;
     background: url(images/jumbotron.jpg) no-repeat center center;
     background-size: cover;
     text-align: left;
     display: flex;
     align-items: flex-end;
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
+    margin-top: -110px
+        
 }
 
 #mytitle, #mytitlesmall {
@@ -98,8 +108,12 @@ body .navbar-default .navbar-nav>li>a:hover {
 
 /* -- carousel section -- */
 
+#myCarousel {
+    clear: both;
+}
+
 .carousel-inner {
-    min-height: 1000px;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +215,7 @@ i {
 .footernav {
     
     min-height: 100px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.4);
     justify-content: space-around;
     font-size: 1.36em;
 }
