@@ -7,9 +7,6 @@
     box-sizing: border-box;
 }
 
-
-
-
 /* -- nav area -- */
 .container-fluid {
     width: 100%;
@@ -18,16 +15,16 @@
 #logo{
     height: 50px;
     float: left;
-    margin: 15px;
-    
+    margin-top: -20px
 }
 
 body .navbar-default {
-      background-color: rgba(0,0,0,.7);
-      position: relative;
+      background-color: rgba(0,0,0,.5);
       width: 100%;
       z-index: 1;
-      border: none;  
+      border: none; 
+        position: fixed;
+    top: 0px
  }
 
 body .jumbohue {
@@ -48,7 +45,7 @@ body .jumbotron {
     align-items: flex-end;
     width: 100%;
     margin-bottom: 100px;
-    margin-top: -110px
+      
         
 }
 
@@ -57,9 +54,18 @@ body .jumbotron {
     text-shadow: 1px 1px 4px black;
 }
 
-body .navbar-toggle {
+.navbar-toggle {
     margin: 22px;
-    padding: 25px
+    padding: 25px;
+    background-color: none;
+}
+
+button:focus, button:hover {
+    background-color: RGBA(0,0,0,0.2)!important;
+}
+
+.navbar-default .navbar-nav > li > a:hover, a:focus {
+    background-color: RGBA(200,200,0,.05);
 }
 
 .dropdown-menu>li>a:hover {
@@ -76,10 +82,6 @@ body .navbar-default .navbar-nav>li>a {
 
 body .navbar-default .navbar-nav>li>a:hover {
     color: lightgoldenrodyellow;
-}
-
-.dropdown .dropdown-toggle{
-  
 }
 
 .dropdown-menu {
@@ -99,7 +101,6 @@ body .navbar-default .navbar-nav>li>a:hover {
     margin: 10px;
 }
 
-
 .navbar {
     border-radius: 0px;
     margin: 0px;
@@ -110,14 +111,16 @@ body .navbar-default .navbar-nav>li>a:hover {
 
 #myCarousel {
     clear: both;
+    
 }
 
-.carousel-inner {
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.carousel-inner item {
+display: block;
+    margin: auto;
 }
+
+.item img {
+margin: auto;}
 
 body .carousel-caption {
     color: darkblue;
@@ -127,8 +130,6 @@ body .carousel-caption {
 body .carousel-caption  {
    bottom: -20px
 }
-
-
 
 
 
@@ -190,6 +191,7 @@ i {
 /* --- gallery sections --- */
 
 .gallery {
+    
 }
 
 .gallerypicbox {
@@ -199,17 +201,13 @@ i {
 .gallerypicbox img {
   
     margin: 0px auto;
-    display: block;
+
 }
 
-.galleryinfo {
-    
-    width: 100%;
-    margin: 40px 0px;
-    text-align: center;
+.gallerypicbox video{
+    position: absolute;
+    z-index: 1;
 }
-
-
 /* --- footer nav --- */
 
 .footernav {
