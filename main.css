@@ -15,7 +15,7 @@
 #logo{
     height: 50px;
     float: left;
-    margin-top: -20px
+    margin-top: -15px;
 }
 
 body .navbar-default {
@@ -23,8 +23,8 @@ body .navbar-default {
       width: 100%;
       z-index: 1;
       border: none; 
-        position: fixed;
-    top: 0px
+      position: fixed;
+      top: 0px;
  }
 
 body .jumbohue {
@@ -65,14 +65,15 @@ button:focus, button:hover {
 }
 
 .navbar-default .navbar-nav > li > a:hover, a:focus {
-    background-color: RGBA(200,200,0,.05);
+    background-color: RGBA(200,200,200,.2);
 }
 
 .dropdown-menu>li>a:hover {
-    color: lightgoldenrodyellow;
+    color: black;
+    text-shadow: none;
 }
 
-body .navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a {
     color: #fff;
     font-size: 1.8em;
     padding: 30px;
@@ -80,16 +81,16 @@ body .navbar-default .navbar-nav>li>a {
     transition: 0.5s ease;
 }
 
-body .navbar-default .navbar-nav>li>a:hover {
-    color: lightgoldenrodyellow;
+.navbar-default .navbar-nav>li>a:hover {
+    color: lightgray;
 }
 
 .dropdown-menu {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
 }
 
 .dropdown-menu li {
-    color: lightgoldenrodyellow;
+    color: lightgray;
     margin: 10px;
 }
 
@@ -104,6 +105,16 @@ body .navbar-default .navbar-nav>li>a:hover {
 .navbar {
     border-radius: 0px;
     margin: 0px;
+}
+
+#bs-example-navbar-collapse-1 ul li ul li a {
+    background-color: #e7e7e7;
+    color:black;
+    text-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    height: 80px;
 }
 
 
@@ -152,9 +163,9 @@ body .carousel-caption  {
 .softwarebox p {
     text-align: center;
     margin-top: 10px;
-    font-size: 0.9em
-        
+    font-size: 0.9em;
 }
+
 .bs4{
     display: block;
     
@@ -195,14 +206,16 @@ i {
 }
 
 .gallerypicbox {
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .gallerypicbox img {
-  
     margin: 0px auto;
-
 }
+
+.galleryinfo {
+    margin: 20px 0px
+} 
 
 .gallerypicbox video{
     position: absolute;
@@ -212,16 +225,24 @@ i {
 
 .footernav {
     
-    min-height: 100px;
+    display: flex;
+    min-height: 50px;
     background-color: rgba(0,0,0,0.4);
     justify-content: space-around;
+    align-items: center;
     font-size: 1.36em;
+}
+
+.footerContainer {
+    display: inline-block;
+    margin: 0 auto
 }
 
 .footerDiv {
     padding: 5px;
     text-align: center;
-    margin: 30px 0px;
+    display: inline-block;
+    margin: 0 2px;
 }
 
 .footernav a {
@@ -230,7 +251,19 @@ i {
 }
 
 .footernav a:hover {
-    color: lightgoldenrodyellow;
+    color: lightgray;
     text-decoration: none;
         
+}
+.footerDiv a {
+    font-size: .65em
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footerDiv {
+    padding: 15px;
+    text-align: center;
+    display: block;
+}
 }
