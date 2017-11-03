@@ -19,34 +19,81 @@
 }
 
 body .navbar-default {
-      background-color: rgba(0,0,0,.5);
+      background-color: rgba(0,0,0,.4);
       width: 100%;
       z-index: 1;
       border: none; 
-      position: fixed;
-      top: 0px;
+      position: absolute;
+      top: 0px;    
  }
 
-body .jumbohue {
-    background-size: cover;
-    text-align: left;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-}
-
 body .jumbotron {
-    float: left;
-    height: 100vh;
+
+    min-height: 100vh;
     background: url(images/jumbotron.jpg) no-repeat center center;
     background-size: cover;
-    text-align: left;
     display: flex;
-    align-items: flex-end;
+    align-items:center;
+    justify-content: center;
     width: 100%;
     margin-bottom: 100px;
-      
-        
+}
+
+.bioContainer {
+    background-color: rgba(0,0,0,.6);
+    width: 55%;
+    height: 39%;
+    border-radius: 20px;
+    display: block;
+    margin-top: -100px
+}
+
+.bioContainer2{
+    display: block;
+    position:absolute;
+    top: 615px;
+    font-size: .7em;
+}
+
+.bioContainer2:hover{
+    cursor:pointer;
+}
+
+.bioContainer .bio{
+   
+    max-height: 170px;
+    display: block;
+    margin: 20px auto;
+    
+}
+
+.bioContainer2 .bio{
+   
+    max-height: 50px;
+    display: block;
+    margin: 0px auto;
+    
+}
+
+.extra {
+    background-color: rgba(0,0,0,.6);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px auto;
+    color: #ccc;
+    max-width: 75%;
+    font-size: 1.9em
+}
+
+
+
+.title {
+    text-align: center;
+}
+
+.title>h2 {
+    margin: 0;
+    font-size: 1.7em
 }
 
 #mytitle, #mytitlesmall {
@@ -73,12 +120,14 @@ button:focus, button:hover {
     text-shadow: none;
 }
 
+
 .navbar-default .navbar-nav>li>a {
     color: #fff;
     font-size: 1.8em;
     padding: 30px;
     text-shadow: 1px 1px 4px black;
     transition: 0.5s ease;
+   
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -90,13 +139,13 @@ button:focus, button:hover {
 }
 
 .dropdown-menu li {
-    color: lightgray;
+    color: #ccc;
     margin: 10px;
 }
 
 .dropdown-menu li a {
     background-color: rgba(50,50,50,1);
-    color: #fff;
+    color: #ccc;
     text-shadow: 1px 1px 4px black;
     padding: 10px;
     margin: 10px;
@@ -108,7 +157,7 @@ button:focus, button:hover {
 }
 
 #bs-example-navbar-collapse-1 ul li ul li a {
-    background-color: #e7e7e7;
+    background-color: #aaa;
     color:black;
     text-shadow: none;
 }
@@ -117,12 +166,11 @@ button:focus, button:hover {
     height: 80px;
 }
 
-
 /* -- carousel section -- */
 
 #myCarousel {
     clear: both;
-    
+    margin-top: 100px
 }
 
 .carousel-inner item {
@@ -139,7 +187,6 @@ body .carousel-caption {
 }
 
 body .carousel-caption  {
-   bottom: -20px
 }
 
 
@@ -148,22 +195,22 @@ body .carousel-caption  {
 
 
 .softwaretitle {
-    padding:60px;
+    padding:80px;
     text-align: center;
-    cursor:default;
 }
 
 .softwarebox img{
     display: flex;
     align-content: center;
-    height: 5em;
-    margin: auto
+    height: 5.5em;
+    margin: 10px auto;
 }
+
 
 .softwarebox p {
     text-align: center;
-    margin-top: 10px;
-    font-size: 0.9em;
+    font-size: .9em;
+    margin-bottom: 15px
 }
 
 .bs4{
@@ -172,7 +219,7 @@ body .carousel-caption  {
 }
 
 .softwarebox {
-    margin-bottom: 20px
+
 }
 
 
@@ -186,8 +233,8 @@ body .contact {
     margin-bottom: 20px
 }
 
-i {
-    margin-right: 10px
+h2 i {
+ font-size:20px;
 }
 
 .contact div a:hover {
@@ -211,10 +258,12 @@ i {
 
 .gallerypicbox img {
     margin: 0px auto;
+    box-shadow: 0px 0px 15px gray;
 }
 
 .galleryinfo {
-    margin: 20px 0px
+    margin: 40px 0px;
+    
 } 
 
 .gallerypicbox video{
@@ -230,7 +279,8 @@ i {
     background-color: rgba(0,0,0,0.4);
     justify-content: space-around;
     align-items: center;
-    font-size: 1.36em;
+    font-size: 1.25em;
+    margin-top: 50px;
 }
 
 .footerContainer {
@@ -256,14 +306,28 @@ i {
         
 }
 .footerDiv a {
-    font-size: .65em
+    font-size: .80em;
+    margin: 5px;
+    padding: 15px;
 }
 
 
 @media only screen and (max-width: 768px) {
+    
+    .extra {
+    font-size: 1.6em!important;
+    max-width: 95%;
+}
     .footerDiv {
     padding: 15px;
     text-align: center;
     display: block;
 }
+    .navbar-header {
+        height: 0px;
+    }
+    .smaller{
+        height: 70px;
+    }
+   
 }

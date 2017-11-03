@@ -26,50 +26,43 @@
     <![endif]-->
 </head>
   <body>
-      <nav class="navbar navbar-default" id="topnav">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-          <li><a href="index.html"><img src="favicon/mt-brandingicon.png" id="logo" alt="site branding"/></a>.</li>
-        <li><a href="index.html">HOME </a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" id="dropbox" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EXAMPLES<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>Photoshop</li>
-            <li><a href="compositions.html">Compositions</a></li>
-            <li><a href="retouching.html">Re-Touching</a></li>
-            <li role="separator" class="divider"></li>
-            <li>Illustrator</li>
-            <li><a href="#">Vector</a></li>
-            <li role="separator" class="divider">
-            <li>Premiere Pro</li>
-            <li><a href="video.html">Video Editing</a></li>
-            <li role="separator" class="divider"></li>
-            <li>Web Design</li>
-            <li><a href="web.html">Applications</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <nav class="navbar navbar-default" id="topnav">
+                 <div class="container-fluid dropage">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       <ul class="nav navbar-nav">
+                        <li><a href="index.html"><img src="favicon/mt-brandingicon.png" id="logo" alt="site branding"/></a></li>
+                        <li class="smaller"><a href="index.html">HOME</a></li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="dropbox" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EXAMPLES<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="photoshop.html">Photoshop</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="illiustrator.html">Illustrator</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="premiere.html">Premiere Pro</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="web.html">Web Design</a></li>
+                          </ul>
+                         </ul>
+                     </div><!-- /.navbar-collapse -->
+                 </div><!-- /.container-fluid -->
+            </nav>
     <div class="jumbotron">  
         <div class="jumbohue">
           <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-1">        
                     <h1 id="mytitle">MIKE TRAVES</h1>
-                    <h2 id="mytitlesmall">WEB DESIGN</h2>
+                    <h2 id="mytitlesmall">Web Design</h2>
                 </div>
             </div>      
           </div>
@@ -80,7 +73,7 @@
         <div class="container">
             <div class="row gallerybox">
                 <div class="col-sm-8 gallerypicbox">
-                    <img class="img-responsive" src="images/wikiapp.jpg" alt="wikipedia app"/>
+                    <a href="https://codepen.io/miketraves/pen/qPdvjw" target="_blank"><img class="img-responsive" src="images/wikiapp.jpg" alt="wikipedia app"/></a>
                 </div>
                 <div class="col-sm-4 galleryinfo">
                     <h3>Wikipedia API Search App</h3>
@@ -90,21 +83,21 @@
             </div>
             <div class="row gallerybox">
                 <div class="col-sm-8 gallerypicbox">
-                    <img class="img-responsive" src="images/twitchapp.jpg" alt="twitch app"/></div>
-                <div class="col-sm-4 galleryinfo">
-                    <h3>Sports Team Badge</h3>
+                    <a href="https://codepen.io/miketraves/pen/EwVgbj" target="_blank"><img class="img-responsive" src="images/twitchapp.jpg" alt="twitch app"/></div>
+                <div class="col-sm-4 galleryinfo"></a>
+                    <h3>Twitch Live App</h3>
                     <br>
-                    <h4>A second app built with alongside FreeCodeCamp. This app makes a JSON request to twitch, enabling the app to show users if their chosen streamer is currently live</h4>
+                    <h4>A second app built with alongside FreeCodeCamp. This app makes a JSON request to twitch, enabling the app to show users if their chosen streamer is currently live.</h4>
                 </div>
             </div>
             <div class="row gallerybox">
                 <div class="col-sm-8 gallerypicbox">
-                    <img class="img-responsive" src="images/youtube.jpg" alt="youtube app"/>
+                    <a href="https://codepen.io/miketraves/pen/MEaXNm" target="_blank"><img class="img-responsive" src="images/youtube.jpg" alt="youtube app"/></a>
                 </div>
                 <div class="col-sm-4 galleryinfo">
                     <h3>Wikipedia API Search App</h3>
                     <br>
-                    <h4>As part of the FreeCodeCamp front-end qualification. I designed a small app which when a user performs a search provides a snippet of information, from the Wikipedia API using an AJAX request.</h4>
+                    <h4>An application that utilizes youTube's API to list a user's favourite youTube channel's videos in chronological order, accompanied with thumbnail and link.</h4>
                 </div>
             </div>
         </div>
