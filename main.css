@@ -13,13 +13,12 @@
 }
 
 #logo{
-    height: 110px;
-    margin-left: 15px;
-    padding: 20px
+    height: 80px;
+    padding: 15px
 }
 
 body .navbar-default {
-      background-color: rgba(0,0,0,.4);
+      background-color: rgba(0,0,0,.7);
       width: 100%;
       z-index: 1;
       border: none; 
@@ -39,7 +38,7 @@ body .jumbotron {
     display: block;
     background-color: rgba(0,0,0,.6);
     width: 55%;
-    margin: 10% auto 1% auto;
+    margin: 10% auto 2% auto;
     max-height: 450px;
     border-radius: 20px;
     display: block;
@@ -69,7 +68,7 @@ body .jumbotron {
     min-width: 70px;
     display: block;
     margin: 1% auto;
-    padding: 2%
+    padding: 3%
 }
 
 .bioContainer2 .bio{
@@ -80,13 +79,14 @@ body .jumbotron {
 }
 
 #extra{
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.7);
     border-radius: 10px;
     padding: 10px;
     margin: 15px auto;
     color: #fff;
-    max-width: 75%;
-    font-size: 1.8em
+    min-width: 35%;
+    max-width: 90%;
+    font-size: 1.6em
 }
 
 .block {
@@ -100,6 +100,7 @@ body .jumbotron {
 
 #mytitle {
     color: white;
+    text-shadow: 1px 1px 4px black;
 }
 
 .title>h2 {
@@ -123,6 +124,15 @@ body .jumbotron {
     padding: 8px;
     
 }
+
+.navbar {
+    height: 80px
+}
+
+.navbar button {
+    margin: 7px
+}
+
 .navbar-toggle {
     margin: 22px;
     padding: 25px;
@@ -142,14 +152,15 @@ button:focus, button:hover {
     text-shadow: none;
 }
 
+.nav>li.smaller a {
+    
+}
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
-    font-size: 1.8em;
-    padding: 30px;
-    text-shadow: 1px 1px 4px black;
-    transition: 0.5s ease;
-   
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 4px black;
+    transition: 0.5s ease;   
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -169,7 +180,7 @@ button:focus, button:hover {
     background-color: rgba(50,50,50,1);
     color: #ccc;
     text-shadow: 1px 1px 4px black;
-    padding: 10px;
+   
     margin: 10px;
 }
 
@@ -177,7 +188,7 @@ button:focus, button:hover {
     border-radius: 0px;
     margin: 0px;
 }
-
+FONT-S
 .navbar ul {
     margin-top: 15px;
 }
@@ -189,7 +200,8 @@ button:focus, button:hover {
 }
 
 .navbar-default .navbar-nav>li>a {
-    height: 80px;
+ padding: 10px 12px;
+line-height: 5
 }
 
 
@@ -244,6 +256,7 @@ body .carousel-caption  {
 
 .bs4{
     display: block;
+    margin-bottom: 30px
     
 }
 
@@ -348,29 +361,43 @@ h2 i {
     max-width: 95%;
 }
     .footerDiv {
-    padding: 15px;
+    padding: 25px;
     text-align: center;
     display: block;
+}
+    
+  .footerDiv a  {
+      padding: 25px;
 }
     .navbar-header {
         height: 0px;
     }
     .dropage{
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0,0,0,.9);
 }
-
+    .navbar-collapse.in {
+        overflow: hidden;
+    }
+    
 .dropage li:first-child{
     margin-top: 100px
 }
+    .navbar-default .navbar-nav>li>a {
+ padding: 5px 12px;
+line-height: 3;
+        margin-top: 10px
+}
     .smaller{
-        height: 70px;
+        height: 60px;
     }
    
     .bioContainer {
     margin: 34% auto 30px auto;
 }
     .bioContainer2{
-        font-size: .8em
+        font-size: .8em;
     }
-    
+    .bs4 {
+        margin-bottom: 60px;
+    }
 }
