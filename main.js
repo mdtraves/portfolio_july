@@ -1,11 +1,19 @@
 $(document).ready(function(){
     $("#mytitle").hide();
     $("#mytitlesmall").hide();
-    $("#mytitle").slideDown(600);
-    $("#mytitlesmall").slideDown(600);
+    $("#mytitle").fadeIn(1500);
+    $("#mytitlesmall").fadeIn(2000);
     
     $("#extra").hide();
     $(".bioContainer2").click(function(){
-        $("#extra").slideToggle(300);
+        $("#extra").fadeToggle(800);
     });
+    $(".gallerypicbox").click(function(){
+        $(this).toggleClass("col-md-12");
+    });
+    
 });
+
+
+
+
